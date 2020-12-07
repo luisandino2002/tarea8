@@ -1,0 +1,18 @@
+<h2>APPS</h2>
+<div>
+    <div class="container">
+        <div class="card-group">
+            <div class="card" style="width:100px" *ngFor="let apps of appsModel">
+                <div class="h-100">
+                    <img class="card-img-top img-fluid" [src]="apps.urlImage" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{apps.name}}</h4>
+                    <p class="card-text">{{apps.genres}} / Price: $ {{apps.price}}</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

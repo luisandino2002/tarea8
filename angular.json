@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "tarea-semana7"
+  "defaultProject": "tarea-semana7",
+  "cli": {
+    "analytics": false
+  }
 }

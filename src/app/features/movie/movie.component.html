@@ -1,0 +1,19 @@
+<h2>Movies</h2>
+<div>
+    <div class="container">
+        <div class="card-group">
+            <div class="card" style="width:100px" *ngFor="let movie2 of movieModel" (click)="viewMovieDetail(movie2.details)">
+                <div class="h-100">
+                    <img class="card-img-top img-fluid" [src]="movie2.urlImage" alt="Card image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{movie2.tittle}}</h4>
+                    <p class="card-text">{{movie2.genres}} / Price: $ {{movie2.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <detail-cmp *ngIf="movieDetail" [detail]="movieDetail"></detail-cmp>
+    </div>
+</div>
