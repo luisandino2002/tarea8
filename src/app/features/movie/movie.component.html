@@ -7,13 +7,11 @@
                     <img class="card-img-top img-fluid" [src]="movie2.urlImage" alt="Card image">
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title">{{movie2.tittle}}</h4>
+                    <h4 class="card-title"><a [routerLink]="['/moviesd','m',movie2.tittle]">{{movie2.tittle}}</a></h4>
                     <p class="card-text">{{movie2.genres}} / Price: $ {{movie2.price}}</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <detail-cmp *ngIf="movieDetail" [detail]="movieDetail"></detail-cmp>
-    </div>
+    
 </div>

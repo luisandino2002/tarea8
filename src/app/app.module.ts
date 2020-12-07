@@ -8,16 +8,19 @@ import { AppsComponent } from './features/apps/apps.component';
 import { BookComponent } from './features/book/book.component';
 import { DetailComponent } from './features/detail/detail.component';
 import { AppRoutingModule } from './app.routing.module';
+import { NewmovieComponent } from './features/new-movie/new-movie.component';
+import { FormsModule } from '@angular/forms';
+import { MovieDataService } from './common/services/movie-data.service';
 
 @NgModule({
   declarations: [
-    AppComponent, MovieComponent, AppsComponent, BookComponent, DetailComponent,
+    AppComponent, MovieComponent, AppsComponent, BookComponent, DetailComponent,NewmovieComponent,
   ],
   imports: [
     BrowserModule,
-    NgbModule, AppRoutingModule
+    NgbModule, AppRoutingModule, FormsModule
   ],
-  providers: [],
+  providers: [MovieDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

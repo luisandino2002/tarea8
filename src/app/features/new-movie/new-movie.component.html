@@ -1,0 +1,30 @@
+<form>
+    <div class="form-group">
+      <label for="movie-tittle">Tittle</label>
+      <input type="text" class="form-control" id="movie-tittle" name="tittle" 
+      placeholder="Enter email"
+      [(ngModel)]="movie.tittle">
+    </div>
+    <div class="form-group">
+      <label for="movie-genres">Genres</label>
+      <input type="text" class="form-control" id="movie-genres"  name = "genres" 
+      placeholder="Enter Genres"[(ngModel)]="movie.genres">
+    </div>
+
+    <div class="form-group">
+      <label for="movie-price">Genres</label>
+      <input type="number" class="form-control" id="movie-price"  name = "proce" 
+      placeholder="Enter price" [(ngModel)]="movie.price">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="save()">Save</button>
+  </form>
+
+  <!-- urlImage: "https://upload.wikimedia.org/wikipedia/commons/9/96/TheNewMutants.jpg",
+  details: [{
+      starts: 3.5,
+      date: "20/09/2020",
+      language: "English",
+      description: "In this terrifying, action-fueled film based on the MARVEL comic series, five young people who demonstrate special powers",
+  }
+  ], -->
