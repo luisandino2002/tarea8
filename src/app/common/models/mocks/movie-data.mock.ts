@@ -1,4 +1,5 @@
 import { Movie } from '../movie.model';
+  
 export const MOVIES_DATA: Movie[] = [
     {
         tittle: "The New Mutants",
